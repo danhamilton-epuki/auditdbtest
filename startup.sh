@@ -8,4 +8,6 @@ apt-get install -y --no-install-recommends \
     libffi-dev \
     gcc g++
 
+pip install -r requirements.txt --no-cache-dir
+
 gunicorn -w 4 -b 0.0.0.0:8000 app:app
